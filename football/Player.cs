@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace football
 {
-    internal class Player
+    public class Player
     {
         //переменные которые будут хранящить данные 
         public string Name { get; }
         public double X { get; private set; }
         public double Y { get; private set; }
         private double _vx, _vy;
-        public Team? Team { get; set; } = null;
+        public Team? Team { get; private set; } 
 
         private const double MaxSpeed = 5;
         private const double MaxKickSpeed = 25;

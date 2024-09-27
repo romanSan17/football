@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace football
 {
-    internal class Team
+    public class Team
     {
         //свойства
         public List<Player> Players { get; } = new List<Player>();

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace football
 {
-    internal class Game
+    public class Game
     {
         //объявление переменных команд, стадиона и мяча
         public Team HomeTeam { get; } 
         public Team AwayTeam { get; }
         public Stadium Stadium { get; }
-        public Ball Ball { get; private set; }
+        public Ball Ball { get; private set; } = null!;
         //привязывает команды к текущей игре
         public Game(Team homeTeam, Team awayTeam, Stadium stadium)
         {

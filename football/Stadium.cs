@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace football
 {
-    internal class Stadium
+    public class Stadium
     {
         public Stadium(int width, int height)
         {
